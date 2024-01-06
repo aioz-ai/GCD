@@ -1,6 +1,6 @@
 
 
-# [Controllable Group Choreography using Contrastive Diffusion (SIGGRAPH ASIA 2023)](https://openaccess.thecvf.com/content/CVPR2023/papers/Le_Music-Driven_Group_Choreography_CVPR_2023_paper.pdf)
+# Controllable Group Choreography using Contrastive Diffusion (SIGGRAPH ASIA 2023)
 ### *[Nhat Le](https://minhnhatvt.github.io/), [Tuong Do](https://scholar.google.com/citations?user=qCcSKkMAAAAJ&hl=en), [Khoa Do](https://aioz-ai.github.io/GCD/), [Hien Nguyen](https://aioz-ai.github.io/GCD/), [Erman Tjiputra](https://sg.linkedin.com/in/erman-tjiputra), [Quang D. Tran](https://scholar.google.com/citations?user=DbAThEgAAAAJ&hl=en), [Anh Nguyen](https://cgi.csc.liv.ac.uk/~anguyen/)*
 ### [[Project Page](https://aioz-ai.github.io/GCD/)] [[Paper](https://dl.acm.org/doi/abs/10.1145/3618356)] [[Arxiv](https://arxiv.org/abs/2310.18986)]
 
@@ -63,7 +63,7 @@ The data directory structure should look like this:
 
 
 ## Training GCD from scratch
-> Note: you may run `accelerate config` before starting to config the model training with multiple GPUs or mixed precision (we use fp16).
+> Note: you may run `accelerate config` before starting in order to configure training with multiple GPUs or mixed precision (we use fp16).
 
 
 
