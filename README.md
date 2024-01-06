@@ -11,6 +11,7 @@
 
 ## Table of Contents
 1. [Prerequisites](#prerequisites)
+2. [Training](#training-gcd-from-scratch)
 
 
 ## Prerequisites
@@ -82,6 +83,8 @@ Some useful parameters:
 * `--num_steps` number of expected training iterations
 * `--save_interval` interval to save model checkpoint (every specified iteration)
 * `--resume_checkpoint` path to model checkpoint to resume previous training session (we also save the model with currently highest iterations in `last.ckpt`)
+
+We also support logging and monitoring with [wandb](https://wandb.ai/site), where the training progress will be logged and visualized onto their web interface. You can specify the project name `--wandb_pj_name`  and experiment name `--exp_name`.
 
 
 
