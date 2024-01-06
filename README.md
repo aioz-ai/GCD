@@ -41,7 +41,7 @@ We use [GDANCE](https://github.com/aioz-ai/AIOZ-GDANCE) dataset to train and eva
 
 Our model also operates on input music features to generate corresponding motions. We provide pre-extracted (Jukebox) features from GDANCE music sequences in [here](). 
 
-If you want to extract the music features yourself, please check out [this directory]().
+If you want to extract the music features yourself, please check out [this repository](https://github.com/aioz-ai/GCD/tree/main/extract).
 
 The data directory structure should look like this:
 ```bash
