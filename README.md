@@ -67,14 +67,23 @@ The data directory structure should look like this:
 
 
 ```bash
-accelerate launch --mixed_precision fp16 -m train.train --save_dir save_ckpt/gcd --datapath "datasets/gdance" --split_file "train_split_sequence_names.txt" --music_extra_token --target_seq_len 150 --max_persons 5 --layers 5 --cond_mask_prob 0.2 --lambda_main 1.0 --lambda_vel 1.0 --lambda_rcxyz 1.0 --lambda_fc 5.0 --use_film --use_style --lambda_contrastive 0.00001 --disc_num_layers 2 --disc_time_aware --intra_replace_prob 0.5 --num_negs 8 --batch_size 32 --num_workers 8 --overwrite --optim Adan --lr 1e-4 --weight_decay 0.02 --num_steps 1000000 --log_interval 20 --save_interval 10000 --resume_checkpoint ""
+accelerate launch --mixed_precision fp16 -m train.train --save_dir save_ckpt/gcd --datapath "datasets/gdance" --split_file "train_split_sequence_names.txt" --music_extra_token --target_seq_len 150 --max_persons 5 --layers 5 --cond_mask_prob 0.2 --lambda_main 1.0 --lambda_vel 1.0 --lambda_rcxyz 1.0 --lambda_fc 5.0  --lambda_contrastive 0.00001 --use_film --use_style --disc_num_layers 2 --disc_time_aware --intra_replace_prob 0.5 --num_negs 8 --batch_size 32 --num_workers 8 --overwrite --optim Adan --lr 1e-4 --weight_decay 0.02 --num_steps 1000000 --log_interval 20 --save_interval 10000 --resume_checkpoint ""
 ```
 
 
-<!-- Some useful parameters:
-* `--target_seq_len`
-* B
-* C -->
+Some useful parameters:
+* `--target_seq_len` the fixed sequence length for batching samples for training
+* `--max_persons` maximum number of dancers considered per sample
+* `--layers` number of layers of the denoising network (transformer decoder blocks)
+* `--disc_num_layers`: number of layers of the contrastive encoder
+* `--lambda_main, --lambda_vel, ...` corresponding loss weight coefficients
+* `--intra_replace_prob` probability for a dancer to be replaced by another in negative samples
+* `--num_negs` number of negative samples for contrastive learning
+* `--num_steps` number of expected training iterations
+* `--save_interval` interval to save model checkpoint (every specified iteration)
+* `--resume_checkpoint` path to model checkpoint to resume previous training session (we also save the model with currently highest iterations in `last.ckpt`)
+
+
 
 
 
