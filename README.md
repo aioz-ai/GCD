@@ -91,7 +91,19 @@ We also support logging and monitoring with [wandb](https://wandb.ai/site), wher
 
 
 
-<!-- ## Citation
+## Citation
+```
+@article{le2023controllable,
+  title={Controllable Group Choreography Using Contrastive Diffusion},
+  author={Le, Nhat and Do, Tuong and Do, Khoa and Nguyen, Hien and Tjiputra, Erman and Tran, Quang D and Nguyen, Anh},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={42},
+  number={6},
+  pages={1--14},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}
+```
 ```
 @inproceedings{aiozGdance,
     author    = {Le, Nhat and Pham, Thang and Do, Tuong and Tjiputra, Erman and Tran, Quang D. and Nguyen, Anh},
@@ -99,7 +111,7 @@ We also support logging and monitoring with [wandb](https://wandb.ai/site), wher
     journal   = {CVPR},
     year      = {2023},
 }		
-``` -->
+```
 
 ## License
 Software Copyright License for non-commercial scientific research purposes.
