@@ -7,7 +7,7 @@ This repository contains code for extracting music features from [OpenAI's Jukeb
 ## Installlation
 
 ```bash
-conda create -n jukemir python=3.8
+conda create -n jukemir python=3.7
 conda activate jukemir
 
 conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 -c pytorch
