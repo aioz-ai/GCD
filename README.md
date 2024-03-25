@@ -92,6 +92,9 @@ We also support logging and monitoring with [wandb](https://wandb.ai/site), wher
 
 
 ## Citation
+
+If you use this code as part of any published research, we'd really appreciate it if you could cite the following paper:
+
 ```
 @article{le2023controllable,
   title={Controllable Group Choreography Using Contrastive Diffusion},
@@ -104,6 +107,8 @@ We also support logging and monitoring with [wandb](https://wandb.ai/site), wher
   publisher={ACM New York, NY, USA}
 }
 ```
+
+If you find that the AIOZ-GDance dataset is useful, you could cite the following paper:
 ```
 @inproceedings{aiozGdance,
     author    = {Le, Nhat and Pham, Thang and Do, Tuong and Tjiputra, Erman and Tran, Quang D. and Nguyen, Anh},
