@@ -37,7 +37,7 @@ Our code relies on [SMPL](https://smpl.is.tue.mpg.de/) as the body model. You ca
 
 ### 2. Data
 
-We use [GDANCE](https://github.com/aioz-ai/AIOZ-GDANCE) dataset to train and evaluate models in our experiments. Please [download](https://vision.aioz.io/f/430eb9d90552480e8b4e/?dl=1) and extract the data into `./datasets/` (Otherwise you may need to update the running option to point to the path you have extracted).
+We use [GDANCE](https://github.com/aioz-ai/AIOZ-GDANCE) dataset to train and evaluate models in our experiments. Please [download](https://huggingface.co/datasets/aiozai/AIOZ-GDANCE) and extract the data into `./datasets/` (Otherwise you may need to update the running option to point to the path you have extracted).
 
 Our model also operates on input music features to generate corresponding motions. We provide pre-extracted (Jukebox) features from GDANCE music sequences in [here](https://huggingface.co/aiozai/JukeBoxFeatures/resolve/main/jukebox_features.zip). 
 
